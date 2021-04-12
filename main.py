@@ -9,8 +9,8 @@ driver.get("https://ta.yrdsb.ca/yrdsb/")
 def send(to):
     smtp_ssl_host = 'smtp.gmail.com'
     smtp_ssl_port = 465
-    username = 'sankeethdude@gmail.com'
-    password = 'hteeknas1234'
+    username = 'EMAIL'
+    password = 'PASSWORD'
     from_addr = username
     to_addrs = [to]
     message = MIMEText("Your marks changed")
@@ -24,9 +24,9 @@ def send(to):
 
 
 username = driver.find_element_by_name("username")
-username.send_keys("340803493")
+username.send_keys("USERNAME")
 password = driver.find_element_by_name("password")
-password.send_keys("hotdogsr")
+password.send_keys("PASSWORD")
 login = driver.find_element_by_name("submit")
 time.sleep(5)
 login.click()
